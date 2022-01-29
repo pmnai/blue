@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Blue Easy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+    <link rel="icon" href="img/be.ico" />
+</head>
+
+<body>
+    <header id="menu" class="container-fluid fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg justify-content-between">
+                <a class="navbar-brand" href="#"><img alt="logo" src="img/logo.svg"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navicon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end mt-3" id="navbarNav">
+                    <ul class="navbar-nav menu nav ">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#video">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="header" class="container-fluid">
+        <header class="row justify-content-center">
+            <h1 class="text-center"><span>“I’m looking for the unexpected.</span><br />
+                <span>I’m looking for things I’ve never seen before.”</span></h1>
+        </header>
+    </section>
+    <section id="services" class="container-fluid">
+        <div class="container">
+            <header class="row d-block">
+                <div class="col-12">
+                    <h2 class="title">Services</h2>
+                    <hr>
+                </div>
+            </header>
+            <div class="row">
+                <article class="col-md-3">
+                    <header>
+                        <figure>
+                            <img src="img/coffee.svg" alt="coffee">
+                        </figure>
+                        <h3>Coffee</h3>
+                        <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
+                            Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                    </header>
+                </article>
+                <article class="col-md-3">
+                    <header>
+                        <figure>
+                            <img src="img/instant.svg" alt="instant">
+                        </figure>
+                        <h3>Instant</h3>
+                        <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
+                            Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                    </header>
+                </article>
+                <article class="col-md-3">
+                    <header>
+                        <figure>
+                            <img src="img/camera.svg" alt="camera">
+                        </figure>
+                        <h3>Serious</h3>
+                        <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
+                            Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                    </header>
+                </article>
+                <article class="col-md-3">
+                    <header>
+                        <figure>
+                            <img src="img/frame.svg" alt="frame">
+                        </figure>
+                        <h3>Frame</h3>
+                        <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw.
+                            Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                    </header>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="container">
+        <div class="d-flex justify-content-between">
+            <header>
+                <h2 class="title">Portfolio</h2>
+                <hr>
+            </header>
+            <nav>
+                <ul class="nav" id="filters">
+                    <li class="nav-item active" data-type="all">All</li>
+                    <li class="nav-item" data-type="panoramas">Panoramas</li>
+                    <li class="nav-item" data-type="portraits">Portraits</li>
+                    <li class="nav-item" data-type="macros">Macros</li>
+                    <li class="nav-item" data-type="journal">Journal</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="gallery" class="row justify-content-center" data-toggle="modal" data-target="#exampleModal">
+            <article class="col-md-3 col-sm-6" data-target="panoramas macros">
+                <a href="#portfolio">
+                    <img src="img/portfolio1.jpg" class="img-fluid" alt="slide 0" data-target="#carouselExample"
+                        data-slide-to="0">
+                </a>
+            </article>
+            <article class="col-md-3 col-sm-6" data-target="portraits journal">
+                <a href="#portfolio">
+                    <img src="img/portfolio2.jpg" class="img-fluid" alt="slide 1" data-target="#carouselExample"
+                        data-slide-to="1">
+                </a>
+            </article>
+            <article class="col-md-3 col-sm-6" data-target="macros journal">
+                <a href="#portfolio">
+                    <img src="img/portfolio3.jpg" class="img-fluid" alt="slide 2" data-target="#carouselExample"
+                        data-slide-to="2">
+                </a>
+            </article>
+            <article class="col-md-3 col-sm-6" data-target="portraits panoramas">
+                <a href="#portfolio">
+                    <img src="img/portfolio4.jpg" class="img-fluid" alt="slide 3" data-target="#carouselExample"
+                        data-slide-to="3">
+                </a>
+            </article>
+            <article class="col-md-3 col-sm-6" data-target="portraits macros">
+                <a href="#portfolio">
+                    <img src="img/portfolio5.jpg" class="img-fluid" alt="slide 4" data-target="#carouselExample"
+                        data-slide-to="4">
+                </a>
+            </article>
+            <article class="col-md-3 col-sm-6" data-target="journal panoramas">
+                <a href="#portfolio">
+                    <img src="img/portfolio6.jpg" class="img-fluid" alt="slide 5" data-target="#carouselExample"
+                        data-slide-to="5">
+                </a>
+            </article>
+            <article class="col-md-3 col-sm-6" data-target="portraits macros">
+                <a href="#portfolio">
+                    <img src="img/portfolio7.jpg" class="img-fluid" alt="slide 6" data-target="#carouselExample"
+                        data-slide-to="6">
+                </a>
+            </article>
+            <article class="col-md-3 col-sm-6" data-target="journal panoramas">
+                <a href="#portfolio">
+                    <img src="img/portfolio8.jpg" class="img-fluid" alt="slide 7" data-target="#carouselExample"
+                        data-slide-to="7">
+                </a>
+            </article>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExample" data-slide-to="1"></li>
+                                <li data-target="#carouselExample" data-slide-to="2"></li>
+                                <li data-target="#carouselExample" data-slide-to="3"></li>
+                                <li data-target="#carouselExample" data-slide-to="4"></li>
+                                <li data-target="#carouselExample" data-slide-to="5"></li>
+                                <li data-target="#carouselExample" data-slide-to="6"></li>
+                                <li data-target="#carouselExample" data-slide-to="7"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/portfolio1.jpg" alt="slide 0">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/portfolio2.jpg" alt="slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/portfolio3.jpg" alt="slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/portfolio4.jpg" alt="slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/portfolio5.jpg" alt="slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/portfolio6.jpg" alt="slide 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/portfolio7.jpg" alt="slide 6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/portfolio8.jpg" alt="slide 7">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <header>
+                        <h2 class="title">Just default section</h2>
+                        <hr>
+                    </header>
+                    <div class="description">
+                        <p>Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi
+                            bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer
+                            gummies cheesecake brownie.</p>
+                        <p>Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding.
+                            Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I
+                            love candy canes toffee.</p>
+                    </div>
+                    <a href="#">Visit me</a>
+                </div>
+                <aside class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://player.vimeo.com/video/374073893?title=0&byline=0&portrait=0"
+                            frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                </aside>
+            </div>
+    </section>
+
+    <section id="twitter" class="container-fluid">
+        <div class="container">
+            <header class="d-flex justify-content-between">
+                <div class="col-8 pl-0">
+                    <h2 class="title">Twitter</h1>
+                        <hr>
+                </div>
+                <figure class="col-4 text-right">
+                    <img src="img/logo-twitter.svg" alt="Twitter logo">
+                </figure>
+            </header>
+            <main class="row">
+                <div class="col-12">
+                    <p>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake
+                        <span>@cheesecake</span> tootsie roll.</p>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section id="presentation" class="container-fluid">
+        <div class="container">
+            <header class="row d-block">
+                <div class="col-12">
+                    <h2 class="title">Who is John Doe</h2>
+                    <hr>
+                </div>
+            </header>
+            <main class="row">
+                <div class="col-md-6">
+                    <p>Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears
+                        sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies
+                        cheesecake brownie.
+                    </p>
+                    <p>Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice
+                        cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy
+                        canes toffee.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar
+                        plum cotton candy chocolate bonbon lemon drops candy canes cotton candy. Cake toffee pie bear
+                        claw pastry..
+                    </p>
+                    <nav>
+                        <ul class="nav justify-content-start">
+                            <li class="nav-item mr-3 mb-3"><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
+                            <li class="nav-item mr-3 mb-3"><a href="#"><img src="img/g+.svg" alt="google+"></a></li>
+                            <li class="nav-item mr-3 mb-3"><a href="#"><img src="img/basket.svg" alt="basket"></a></li>
+                            <li class="nav-item mr-3 mb-3"><a href="#"><img src="img/tea-cup.svg" alt="tea-cup"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section id="testimonials" class="container-fluid">
+        <div class="container">
+            <header class="d-flex justify-content-between">
+                <div class="col-8 pl-0">
+                    <h2 class="title">Testimonials</h2>
+                    <hr>
+                </div>
+                <figure class="col-4 text-right">
+                    <img src="img/guillemet.svg" alt="guillemet">
+                </figure>
+
+            </header>
+            <main class="row">
+                <div class="col-12">
+                    <p>Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon
+                        cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
+                </div>
+                <div class="col-12">
+                    <p class="author">-Walter White</p>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section id="contact" class="container-fluid">
+        <div class="container">
+            <header class="row">
+                <div class="col-12">
+                    <h2 class="title ">Contact</h2>
+                    <hr>
+                </div>
+            </header>
+            <form action="contact.php" method="post">
+                <div class="row justify-content-between">
+                    <div class="form-group col-md-5">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" class="form-control" name="user_name">
+                    </div>
+                    <p class="col-md-6">Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar.
+                        Sweet lollipop halvah
+                        tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes
+                        bear claw donut chupa chups.</p>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="form-group col-md-5">
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" class="form-control" name="user_mail">
+                    </div>
+                    <p class="col-md-6">Linda Newman<br>W325 State Road 123<br>Mondovi, WI(Wisconsin)
+                        98746-54321<br>(715) 946 - 1234</p>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="8" name="user_message"></textarea>
+                    </div>
+                    <button class="btn col-3" type="submit">Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer" class="container-fluid">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <nav class="navbar navbar-expand-lg">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#video" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <p class="col-3 text-right">2013 ©</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/blueEasy.js"></script>
+</body>
+
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+S

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="127" height="23" viewBox="0 0 127 23">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 30px;
+        fill: #fff;
+        font-family: "Segoe UI";
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .cls-2 {
+        fill: #4bcaff;
+      }
+    </style>
+  </defs>
+  <text id="blueasy" class="cls-1" x="-2" y="22">blu<tspan class="cls-2">e</tspan>asy</text>
+</svg>
