@@ -1,0 +1,765 @@
+@font-face {
+  font-family: 'Segoe UI Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Regular"), url("../../font/Segoe UI.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Segoe UI Italic';
+  font-style: italic;
+  font-weight: normal;
+  src: local("Segoe UI Italic"), url("../../font/Segoe UI Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Segoe UI Bold"), url("../../font/Segoe UI Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold Italic';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Segoe UI Bold Italic"), url("../../font/Segoe UI Bold Italic.woff") format("woff");
+}
+
+* {
+  font-family: 'Segoe UI Regular';
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 45px;
+  height: 2px;
+  margin: 0 0 45px 0;
+}
+
+section {
+  padding: 80px 0;
+}
+
+#menu {
+  position: fixed;
+  padding: 40px 0px;
+  background-color: #353f46;
+  opacity: .85;
+}
+
+#menu ul {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+#menu ul li a {
+  font-family: 'Segoe UI Bold';
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: 2px solid transparent;
+  padding: 8px 15px;
+  margin: 0 7px;
+}
+
+#menu ul li a.active, #menu ul li a:hover {
+  border-color: #4bcaff;
+  color: #4bcaff;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 992px) {
+  #menu ul li a {
+    border: 0;
+  }
+  #menu ul li a.nav-link {
+    padding: 8px 15px;
+    margin: 0 7px;
+  }
+  #menu ul li a.active, #menu ul li a:hover {
+    background-color: white;
+    color: #4bcaff;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #menu button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 55px 40px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    margin-bottom: 0px;
+  }
+  #menu button span {
+    background: white;
+    display: block;
+    height: 3px;
+    position: relative;
+    -webkit-transition: background .2s ease-out;
+    transition: background .2s ease-out;
+    width: 30px;
+    border-radius: 5px;
+  }
+  #menu button span:before, #menu button span:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 3px;
+    position: absolute;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    width: 100%;
+    border-radius: 5px;
+  }
+  #menu button span:before {
+    top: 8px;
+  }
+  #menu button span:after {
+    top: -8px;
+  }
+  #menu button[aria-expanded="true"] span {
+    background: transparent;
+  }
+  #menu button[aria-expanded="true"] span:before, #menu button[aria-expanded="true"] span:after {
+    top: 0;
+  }
+  #menu button[aria-expanded="true"] span:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #menu button[aria-expanded="true"] span:after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #menu button:focus {
+    outline: transparent;
+  }
+}
+
+#header {
+  height: 800px;
+  background: url("../img/bg-header.jpg") no-repeat center center;
+  padding-top: 350px;
+}
+
+#header h1 {
+  font-weight: 300;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: white;
+  line-height: 5.5rem;
+}
+
+#header h1 span {
+  background-color: #4a555d;
+  padding: 12px;
+}
+
+@media screen and (max-width: 992px) {
+  #header h1 {
+    font-size: 27px;
+  }
+}
+
+#services {
+  background-color: #4bcaff;
+  color: white;
+}
+
+#services hr {
+  background-color: white;
+}
+
+#services figure {
+  margin-bottom: 1.5rem;
+}
+
+#services h3 {
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+
+#services p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#portfolio h2 {
+  color: #626f76;
+}
+
+#portfolio ul {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+#portfolio ul li {
+  font-family: 'Segoe UI Bold';
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: 2px solid transparent;
+  color: #626f76;
+  margin: 5px;
+  padding: 8px 15px;
+}
+
+#portfolio ul li.active, #portfolio ul li:hover {
+  border-color: #4bcaff;
+  color: #4bcaff;
+  border-radius: 0;
+}
+
+#portfolio hr {
+  background-color: #626f76;
+}
+
+#portfolio article {
+  padding: 15px 15px;
+}
+
+#portfolio article img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.9;
+}
+
+#portfolio article a {
+  position: relative;
+  display: table;
+}
+
+#portfolio article:hover a:before {
+  content: "+";
+  z-index: 300;
+  position: absolute;
+  text-align: center;
+  font-size: 75px;
+  padding-top: 25%;
+  color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#gallery {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#gallery img {
+  height: 75vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 576px) {
+  #gallery img {
+    height: 35vw;
+  }
+}
+
+@media (min-width: 992px) {
+  #gallery img {
+    height: 14vw;
+  }
+}
+
+.carousel-item img {
+  height: 60vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 576px) {
+  .carousel-item img {
+    height: 350px;
+  }
+}
+
+#gallery.custom {
+  padding: 0 15px;
+}
+
+#gallery.custom img {
+  display: block;
+  margin: 15px 0;
+  border-radius: 300px 30px 300px 300px;
+}
+
+#gallery.custom img:hover {
+  border-radius: 30px 90px 30px 30px;
+}
+
+#exampleModal.custom .modal-content {
+  background: none;
+  border: none;
+}
+
+#exampleModal.custom .modal-header {
+  border: none;
+}
+
+#exampleModal.custom .modal-header button {
+  background: none;
+  border-radius: 100px 100px 0 0;
+  padding: 5px 10px;
+  opacity: 1;
+  position: relative;
+  top: 3px;
+  border: solid 2px white;
+}
+
+@media (min-width: 992px) {
+  #exampleModal.custom .modal-header button {
+    top: 15px;
+  }
+}
+
+#exampleModal.custom .modal-header button:hover {
+  top: 3px;
+}
+
+#exampleModal.custom .modal-header span {
+  color: white;
+}
+
+#exampleModal.custom .modal-body {
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+#exampleModal.custom .modal-body::before, #exampleModal.custom .modal-body::after {
+  content: '';
+  height: 50px;
+  width: 50px;
+  display: block;
+  position: absolute;
+  background: white;
+  border-radius: 3px 10px;
+}
+
+@media (min-width: 768px) {
+  #exampleModal.custom .modal-body::before, #exampleModal.custom .modal-body::after {
+    border-radius: 3px 30px;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+#exampleModal.custom .modal-body::before {
+  top: -5px;
+  left: -5px;
+}
+
+@media (min-width: 768px) {
+  #exampleModal.custom .modal-body::before {
+    top: -15px;
+    left: -15px;
+  }
+}
+
+#exampleModal.custom .modal-body::after {
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  #exampleModal.custom .modal-body::after {
+    bottom: -15px;
+    right: -15px;
+  }
+}
+
+#exampleModal.custom .modal-footer {
+  border: none;
+  margin-top: 60px;
+}
+
+@media (min-width: 992px) {
+  #exampleModal.custom .modal-footer {
+    margin-top: 40px;
+  }
+}
+
+#exampleModal.custom .modal-footer .btn {
+  margin: auto;
+  border: solid 2px white;
+  background: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  padding: 0.2em 0.7em;
+}
+
+#exampleModal.custom .modal-footer .btn:hover {
+  background: white;
+  color: black;
+}
+
+#exampleModal.custom .carousel-control-prev, #exampleModal.custom .carousel-control-next {
+  font-size: 2em;
+  top: auto;
+  opacity: 1;
+  bottom: -52px;
+}
+
+@media (min-width: 768px) {
+  #exampleModal.custom .carousel-control-prev, #exampleModal.custom .carousel-control-next {
+    top: 0;
+    opacity: 0.5;
+    bottom: 0;
+  }
+}
+
+#exampleModal.custom .carousel-control-next-icon, #exampleModal.custom .carousel-control-prev-icon {
+  height: 30px;
+  width: 30px;
+}
+
+@media (min-width: 768px) {
+  #exampleModal.custom .carousel-control-prev {
+    left: -90px;
+  }
+}
+
+@media (min-width: 768px) {
+  #exampleModal.custom .carousel-control-next {
+    right: -90px;
+  }
+}
+
+#exampleModal.custom .carousel-indicators {
+  bottom: -60px;
+}
+
+@media (min-width: 992px) {
+  #exampleModal.custom .carousel-indicators {
+    bottom: -30px;
+  }
+}
+
+#exampleModal.custom .carousel-indicators li {
+  height: 30px;
+  border-radius: 100px;
+  background: none;
+  border: solid 2px white;
+}
+
+@media (min-width: 992px) {
+  #exampleModal.custom .carousel-indicators li {
+    height: 10px;
+  }
+}
+
+#exampleModal.custom .carousel-indicators li:hover {
+  background: white;
+}
+
+#exampleModal.custom .carousel-indicators li.active {
+  background: white;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+@media (min-width: 576px) {
+  .switch {
+    margin: 0;
+  }
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch-wrap {
+  text-align: center;
+  background-color: #b1fbc1;
+  padding: 30px;
+  border-radius: 3px;
+  margin: 30px 0 0;
+}
+
+@media (min-width: 576px) {
+  .switch-wrap {
+    position: fixed;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px;
+  }
+}
+
+.switch-text {
+  display: block;
+  margin: 0.5em;
+}
+
+@media (min-width: 576px) {
+  .switch-text {
+    margin: 0 1em 0 0;
+  }
+}
+
+#video {
+  background-color: #515f67;
+  color: white;
+}
+
+#video hr {
+  background-color: white;
+}
+
+#video .description {
+  padding-bottom: 25px;
+}
+
+#video a {
+  font-size: 14px;
+  font-family: 'Segoe UI Bold';
+  text-transform: uppercase;
+  padding: 13px 38px;
+  color: #353f46;
+  border: 2px solid #353f46;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#video a:hover {
+  background-color: #353f46;
+  color: white;
+  text-decoration: none;
+}
+
+#video aside {
+  margin-top: 40px;
+}
+
+#twitter {
+  background-color: #4bcaff;
+  color: white;
+}
+
+#twitter hr {
+  background-color: white;
+}
+
+#twitter span {
+  font-family: 'Segoe UI Bold';
+}
+
+#twitter p {
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: 200;
+}
+
+#presentation {
+  background: url("../img/presentation.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+#presentation hr {
+  background-color: white;
+}
+
+#presentation p {
+  margin-bottom: 35px;
+}
+
+#testimonials {
+  color: #515f67;
+}
+
+#testimonials hr {
+  background-color: #515f67;
+}
+
+#testimonials p {
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+#testimonials .author {
+  font-size: 14px;
+  font-family: 'Segoe UI Bold';
+  color: #4bcaff;
+}
+
+#contact {
+  background: url("../img/contact.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+#contact hr {
+  background-color: white;
+}
+
+#contact label {
+  text-transform: uppercase;
+  font-family: 'Segoe UI Bold';
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#contact .form-control {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 0;
+  padding: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#contact p {
+  margin-top: 0px;
+  margin-bottom: 35px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  #contact p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+#contact button {
+  background-color: #4bcaff;
+  margin-left: 15px;
+  margin-top: 35px;
+  font-family: 'Segoe UI Bold';
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 0;
+  color: white;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#contact button:hover {
+  color: #4bcaff;
+  background-color: white;
+}
+
+#footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #353F47;
+  color: #515F67;
+}
+
+@media screen and (min-width: 992px) {
+  #footer li:not(:last-child):after {
+    content: '|';
+  }
+}
+
+#footer .nav-link, #footer p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #515F67;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+#footer p {
+  margin-top: 1rem;
+}
+
+#footer li:hover a {
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
