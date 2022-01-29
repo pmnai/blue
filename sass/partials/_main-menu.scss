@@ -1,0 +1,87 @@
+#menu{
+    position: fixed;
+    padding: 40px 0px;
+    background-color: #353f46;
+    opacity: .85;
+    ul {
+        justify-content: right;
+        li a{
+            font-family: 'Segoe UI Bold';
+            color: white;
+            text-transform: uppercase;
+            font-size: 16px;
+            border: 2px solid transparent;
+            padding: 8px 15px;
+            margin: 0 7px;
+            &.active, &:hover{
+                border-color: #4bcaff;
+                color: #4bcaff;
+                border-radius: 0;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            li {
+                a{
+                    border: 0;
+                    &.nav-link{
+                        padding: 8px 15px;
+                        margin: 0 7px;
+                    }
+                    &.active, &:hover{
+                        background-color: white;
+                        color: #4bcaff;
+                    }
+                }
+            }
+        }
+    }
+    button {    
+        @media screen and (max-width: 992px) {
+            cursor: pointer;
+            display: inline-block;
+            padding: 55px 40px;
+            user-select: none;
+            margin-bottom: 0px;
+            span{
+                background: white;
+                display: block;
+                height: 3px;
+                position: relative;
+                transition: background .2s ease-out;
+                width: 30px;
+                border-radius: 5px;
+                &:before, &:after{
+                    background: white;
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    position: absolute;
+                    transition: all .2s ease-out;
+                    width: 100%;
+                    border-radius: 5px;
+                }
+                &:before{
+                    top: 8px;
+                }
+                &:after{
+                    top: -8px;
+                }
+            }
+            &[aria-expanded="true"] span{
+                background: transparent;
+                &:before, &:after{
+                    top: 0;
+                }
+                &:before{
+                    transform: rotate(-45deg);
+                }
+                &:after{
+                    transform: rotate(45deg);
+                }
+            }
+            &:focus{
+                outline: transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+#video{
+    background-color: #515f67;
+    color: white;
+    hr{
+        background-color: white;
+    }
+    .description{
+        padding-bottom: 25px;
+    }
+    a{
+        font-size: 14px;
+        font-family: 'Segoe UI Bold';
+        text-transform: uppercase;
+        padding:13px 38px;
+        color: #353f46;
+        border: 2px solid #353f46;
+        transition: all 0.5s ease-out;
+        &:hover{
+            background-color: #353f46;
+            color: white;
+            text-decoration: none;
+        }
+    }
+    aside{
+        margin-top: 40px;
+    }
+}

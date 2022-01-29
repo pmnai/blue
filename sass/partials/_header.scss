@@ -1,0 +1,19 @@
+#header{
+    height: 800px;
+    background: url('../img/bg-header.jpg') no-repeat center center;
+    padding-top: 350px;
+    h1{
+        font-weight: 300;
+        font-size: 42px;
+        text-transform: uppercase;
+        color: white;
+        line-height: 5.5rem;
+        span{
+            background-color: #4a555d;
+            padding: 12px;
+        }
+        @media screen and (max-width: 992px) {
+            font-size: 27px;
+        }
+    }
+}

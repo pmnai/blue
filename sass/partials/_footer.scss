@@ -1,0 +1,27 @@
+#footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #353F47;
+    color: #515F67;
+    @media screen and (min-width: 992px) {
+        li:not(:last-child):after {
+            content: '|';
+        }
+    }
+
+    .nav-link, p{
+        font-size: 12px;
+        font-weight: 500;
+        color:#515F67;
+        text-transform: uppercase;
+        display: inline-block;
+        transition: 1s ease all;
+    }
+    p{
+        margin-top: 1rem;
+    }
+
+    li:hover a{
+        color: #fff;
+    }
+}
